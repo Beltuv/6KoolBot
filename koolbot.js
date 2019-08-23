@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const TOKEN = process.env.token
-const Token = "NTQ3ODA5MzczNzA4MzUzNTU3.XUsdiQ.63fyqVZb-SLkZYISSH-lIRLBU0E";
+
 
 const activities_list = [
   "with Everyone",
@@ -261,4 +261,4 @@ bot.on ('message', (message) => {
   
 });
 
-bot.login(Token); //Change DELETE Token and use TOKEN
+bot.login(TOKEN); //Change DELETE Token and use TOKEN
