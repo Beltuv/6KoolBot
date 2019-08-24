@@ -1,1 +1,1 @@
-worker: node koolbot.js
+worker: node --harmony koolbot.js
