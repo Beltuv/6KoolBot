@@ -13,5 +13,12 @@
     "discord.js-commando": "^0.10.0",
     "ffmpeg": "0.0.4",
     "fs": "0.0.1-security"
+  },
+  {
+  "build": {
+    "env": {
+      "VARIABLE_NAME": "NTQ3ODA5MzczNzA4MzUzNTU3.XWCFBA.mhEFEIPcPRIEkeqJt7FYnFFjKHI"
+    }
   }
+}
 }
