@@ -15,7 +15,6 @@ var lasthi = 0
 var lastbye = 0
 setInterval(() => {
   counter1++;
-  console.log(counter1 + " " + lasthi)
 }, 20000);
 
 bot.on('ready', () => {
