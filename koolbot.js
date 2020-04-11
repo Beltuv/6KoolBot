@@ -2,11 +2,10 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const TOKEN = process.env.token
 
-
 const activities_list = [
-  "with Everyone",
+  "Club Penguin",
   "with some Data",
-  "with Recycled Thrusters",
+  "with his Friends",
   "with all his toys"
 ];
 
@@ -54,7 +53,7 @@ bot.on ('message', (message) => {
     for (var i = 0; i < User_Leaving_Messages.length; i++) {
       if (m.content.startsWith(User_Leaving_Messages[i])) {
         if (lastbye != counter1) {
-          message.channel.send("Hello, " + message.member.displayName + "!")
+          message.channel.send("Goodbye, " + message.member.displayName + "!")
           lastbye = counter1
         }  
       }
@@ -74,7 +73,7 @@ bot.on ('message', (message) => {
     badNames = ['bad bot','badbot','drool bot','droolbot','fool bot','foolbot']
     for (var i = 0; i < badNames.length; i++){
       if (m.content == badNames[i]) {
-        message.channel.send("Fortnite is bad."); //constant
+        message.channel.send("Bad human."); //constant
       }
     }
     fortniteNames = ['fortnite','Fortnite','FORTNITE']
@@ -251,7 +250,7 @@ bot.on ('message', (message) => {
   //Math-END
   //SayCommand
   if (message.content.startsWith("$$SAY")) {
-    if (message.member.roles.find(r => r.name === "Head Management")) {
+    if (message.member.roles.find(r => r.name === "Head Management") || message.member.roles.find(r => r.name === "Owner")) {
       var cutmessagecommand = MessageInString.substring(6);
       bot.channels.get("547791498997923872").send(cutmessagecommand) //general channel
     }
@@ -260,4 +259,4 @@ bot.on ('message', (message) => {
   
 });
 
-bot.login(TOKEN); //Change DELETE Token and use TOKEN
+bot.login(Token); //Change DELETE Token and use TOKEN
